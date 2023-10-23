@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+
+ html, body, #root, .App {
+  /* min-height: 100vh; */
+  height: 100%;
+  margin: 0px;
+  min-width: fit-content;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Dashboard */
+.Dashboard {
+  width: 65vw;
 }
+.Dashboard header {
+  padding-top: 20px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Dashboard .botton-box {
+  display: flex; 
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+/* card view */
+.Dashboard .group-card {
+  margin-bottom : 10px;
+}
+
+.ant-card-head-title {
+  margin-right : 8px;
+}
+
+.deleteCard {
+  margin-left : 5px;
+}
+
+/* CreateDashboard */
+.CreateDashboard header {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.CreateDashboard .name-box {
+  margin-top: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+}
+
+.CreateDashboard .name-box div {
+  width: 35%;
+}
+
+.CreateDashboard .name-box input {
+  width: 65%;
+}
+
+.CreateDashboard .player-box {
+  margin-top: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.CreateDashboard .player-box .button-box {
+  display: flex;
+  justify-content: end;
+}
+
+
+.CreateDashboard .player-box .button-box {
+  padding-bottom: 10px;
+  
+}
+
+.CreateDashboard .player-box .content-box {
+  display: flex;
+}
+
+.CreateDashboard .playerInputs {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.CreateDashboard .playerInputs div {
+  width: 20%;
+}
+
+.CreateDashboard .playerInputs input {
+  width: 80%;
+}
+
+.CreateDashboard .scoring-box {
+  margin-top: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+}
+
+.CreateDashboard .scoring-box div {
+  width: 20%;
+}
+
+.CreateDashboard .scoring-box select {
+  width: 80%;
+}
+
+
+.CreateDashboard .buttonBox {
+  margin-top: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+}
+
+.CreateDashboard .buttonBox button {
+  background-color: #64c968;
   color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.BoardCard {
+  padding-bottom : 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* cardDetail modal*/
+.cardDetailInputBox {
+  display : flex;
+}
+
+.cardDtailPlayerInput {
+  width : 50%;
+}
+.cardDetailPlayerScore {
+  width: 10%;
+  margin-right : 15px;
+}
+
+.cardDetailPlayerButtons {
+  border : none; 
+  padding-right: 5px;
+  padding-left: 5px;
+  /* justify-content: flex-start; */
+}
+
+/* notification */
+.ant-notification .ant-notification-notice {
+  width: 300px
+}
+
+.ant-notification .ant-notification-notice .ant-notification-notice-with-icon .ant-notification-notice-message {
+  font-size: 12px;
+}
+
+/* Login */
+.Login {
+  display: flex;
+  justify-content: center;
+}
+
+.Login .ant-form-item-control-input {
+  width : 100%
 }
